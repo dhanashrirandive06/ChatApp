@@ -1,0 +1,78 @@
+/* Tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Form Css */
+.formBackground {
+  background: rgb(38, 5, 56);
+  background: linear-gradient(
+    124deg,
+    rgba(38, 5, 56, 1) 50%,
+    rgba(63, 5, 99, 1) 50%
+  );
+}
+
+/* Dashboard conversation css */
+.conversationBackground {
+  background: #2e0142;
+  /* background: rgb(38,5,56); */
+  background: linear-gradient(
+    124deg,
+    rgba(38, 5, 56, 1) 86%,
+    rgba(63, 5, 99, 1) 86%
+  );
+}
+
+.conversationRow {
+  background-color: #dcc9e8;
+}
+
+/* No Message Img Animation */
+.animateImg {
+  animation: bounce 1s infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bounce;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* #260538
+#3f0563 */
